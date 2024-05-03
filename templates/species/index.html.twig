@@ -1,0 +1,24 @@
+{# templates/menu_principal/species.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Species Information</title>
+    <link rel="stylesheet" href="{{ asset('css/especie.css') }}">
+</head>
+<body class="portada-container">
+    <h1>Species Information</h1>
+    <ul>
+        <li><strong>Name:</strong> {{ species.name }}</li>
+        <li><strong>Classification:</strong> {{ species.classification }}</li>
+        <li><strong>Designation:</strong> {{ species.designation }}</li>
+        <li><strong>Average Height:</strong> {{ species.average_height }}</li>
+        <li><strong>Skin Colors:</strong> {{ species.skin_colors }}</li>
+        <li><strong>Hair Colors:</strong> {{ species.hair_colors }}</li>
+        <li><strong>Eye Colors:</strong> {{ species.eye_colors }}</li>
+        <li><strong>Average Lifespan:</strong> {{ species.average_lifespan }}</li>
+        <li><strong>Language:</strong> {{ species.language }}</li>
+    </ul>
+</body>
+</html>

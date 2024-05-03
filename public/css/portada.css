@@ -1,0 +1,111 @@
+.portada-container {
+    background-image: url('../images/aaa.jpeg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: palpitar 2s infinite alternate; /* Aplicar animación de palpitar */
+  }
+
+  /* Definición de la animación de palpitar */
+  @keyframes palpitar {
+    from {
+      transform: scale(1); /* Escala inicial (normal) */
+    }
+    to {
+      transform: scale(1.05); /* Escala final (ligeramente más grande) */
+    }
+  }
+
+  /* Estilos para el contenido dentro del contenedor */
+  .contenido {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  }
+ /* portada.css */
+/* portada.css */
+/* portada.css */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centra los elementos de la lista horizontalmente */
+  }
+  
+  ul li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    margin: 10px;
+  }
+  
+  ul li a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    transition: color 0.3s;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  }
+  
+  ul li a:hover {
+    color: white;
+  }
+  
+  ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr);
+    overflow: hidden;
+    transition: width 0.5s;
+    white-space: nowrap; /* Evita que el texto se desborde */
+  }
+  
+  ul li a:hover::before {
+    width: 0;
+    overflow: hidden;
+  }
+  
+  .button {
+    border: none;
+    border-radius: 25px;
+    width: auto; /* Ajusta automáticamente el ancho según el contenido */
+    min-width: 150px; /* Ancho mínimo para evitar que el botón sea demasiado pequeño */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5d1185;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #483cd6;
+  }
+  
+  .button:active {
+    background-color: #392fa9;
+    transform: translateY(2px);
+  }
+  

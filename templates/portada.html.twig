@@ -1,0 +1,41 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/portada.css') }}">
+    <title>Portada</title>
+</head>
+<body>
+ <!-- Contenedor de la portada con animación -->
+  <div class="portada-container">
+    <!-- Contenido de la portada -->
+    <div class="contenido">
+      <h1>¡Explora nuestro mundo!</h1>
+      <p>😈</p>
+      <ul>
+        <li>
+          <a href="{{ path('Pokedex') }}" class="button" data-text="Ir al Pokédex">Ir al Pokédex</a>
+        </li>
+        <li>
+          <a href="{{ path('dbz') }}" class="button" data-text="DBZ">DBZ</a>
+        </li>
+        
+        <li>
+            <a href="{{ path('app_estudiante') }}" class="button" data-text="Información del Estudiante">Información del Estudiante</a>
+        </li>
+        <li>
+            <a href="{{ path('Starships') }}" class="button" data-text="naves espaciales">naves espaciales</a>
+        </li>
+        <li>
+            <a href="{{ path('species') }}" class="button" data-text="especies">especies</a>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.portada-container {
+    background-image: url('../images/l.jpg');
+    background-size: cover;
+    background-position: center 15%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: palpitar 2s infinite alternate; /* Aplicar animación de palpitar */
+  }
+
+  /* Definición de la animación de palpitar */
+  @keyframes palpitar {
+    from {
+      transform: scale(1); /* Escala inicial (normal) */
+    }
+    to {
+      transform: scale(1.05); /* Escala final (ligeramente más grande) */
+    }
+  }
+  body {
+    color: white;
+  }
+  
